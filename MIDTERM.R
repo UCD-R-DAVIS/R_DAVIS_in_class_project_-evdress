@@ -25,6 +25,6 @@ only_running$form <- ifelse(only_running$year < 2024, yes = "old", no = "new")
 head(only_running$form)
 
 only_running %>% select(form, pace_cat, steps_per_minute) %>% 
-  mutate(avg_steps_per_min = mean(steps_per_minute))
+  mutate(avg_steps_per_min = mean(steps_per_minute)) 
 
 
